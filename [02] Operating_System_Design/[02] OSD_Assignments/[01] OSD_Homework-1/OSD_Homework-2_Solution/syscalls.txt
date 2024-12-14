@@ -1,0 +1,21 @@
+(a) getpid():
+	This function takes no parameters and returns the process ID of the process that is calling it. Every process will have a unique ID assigned by the operating system.
+
+(b) getppid():
+	This function returns the process ID of the parent of the function calling it. If the parent of the current function still exists, then getppid() will return the parent process ID, otherwise, it will return 1 which is the process ID of the init process.
+
+(c) open():
+	This function will open the file specified by the path given as a parameter. If the path is not found or it does not exist, then it will create a new file. This function returns the file descriptor which is used on the subsequent system calls like read, write, etc.
+
+(d) read():
+	This function will read the data from the file into the buffer. It uses the file descriptor which was returned by the open function to read the file. This function takes 3 parameters which are file descriptor, buffer that contains data, and number of bytes to be read. If it is successfully executed it will return the number of bytes read, and if there is any error occurs, it will return -1.
+
+(e) write(): 
+	This function will write the data from the buffer into the file. It uses the file descriptor. This function takes 3 parameters which are file descriptor, buffer that contains data, and number of bytes to be written. If it is successfully executed it will return the number of bytes written, and if there is any error occurs, it will return -1.
+
+(f) close():
+	It closes a file that has an open file descriptor, which means it no longer refers to any file and it can be reused. It frees up all the system resources such as any locks that are associated with that corresponding file. close() takes the file descriptor as a parameter and returns 0 on success and -1 if any error has occurred.
+
+(g) chmod():
+	This function is used to change the permissions of the file of a directory. This will change the file's mode bits. The parameters of this function are the file path and the new permissions mode. This function returns 0 on successfully executing and -1 if any error has occurred.
+	

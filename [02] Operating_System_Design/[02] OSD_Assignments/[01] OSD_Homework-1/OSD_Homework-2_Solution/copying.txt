@@ -1,0 +1,12 @@
+Observations and Investigations:
+- The time to copy a file increases exponentially as the file size increases.
+- As the file size doubles, the copy time increases more than double, especially for large file sizes starting from 1MB.
+- As the size increases for example from 16MB to 32MB the copy time increases from 112 seconds to 237 seconds which is more than double.
+- The copy time for a 64MB file is over 545 seconds which is more than 9 minutes.
+- Every system call switches from user mode to kernel mode, and that is more expensive.
+- So, copying more bytes increases the number of system calls which leads to high overhead.
+
+Recommendation to improve performance:
+- We can use a large buffer size, which will read and write the data in large blocks. So instead of copying data byte to byte, the data is copied in chunks such as a chunk of 4 KB, or 8 KB.
+- This will reduce the number of read and write system calls which will reduce the overhead.
+- We can experiment with different buffer sizes to find the best size for the system and load which is optimal.

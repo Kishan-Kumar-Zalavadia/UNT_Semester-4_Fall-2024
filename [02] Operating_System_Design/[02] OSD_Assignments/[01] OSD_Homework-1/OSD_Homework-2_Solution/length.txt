@@ -1,0 +1,25 @@
+Given: 
+	Processor clock speed: 3GHz
+	Signal Propagation speed: 80% of the speed of light.
+
+Processor clock speed is the rate at which the CPU executes instructions per second. Since our CPU has a 3GHz clock speed, it can execute more instructions per second when compared to a CPU with a clock speed of 1GHz.
+
+Signal propagation speed is the speed at which a signal passes through a wire or a cable in the network.
+
+Step-1:
+	Time for 1 cycle = 1/(3*10^9) = 0.333 * 10^-9 seconds.
+	3GHz represents that the processor completes 3 billion cycles per second. [3 billion seconds = 3*10^9 seconds]
+
+Step-2: 
+	Distance = speed of light * Time for 1 cycle [Since, distance = speed * time]
+	As we know, the speed of light = 3 * 10^8 m/sec
+	Therefore, Distance = (3 * 10^8 m/sec) * (0.333 * 10^-9 sec) = 0.1m = 10cm
+
+Step-3:
+	Since our signal propagation is 80% of the speed of light, the distance becomes 10cm * 0.8.
+	So, Final distance = 8cm.
+
+[Note: 8cm is for round-trip distance, the one-way distance will be half of the round-trip distance which is 4cm]
+
+Therefore, the maximum distance between the CPU and Memory (or Cache), if we want to access data within one processor cycle, is 8 centimeters or 0.08 meters.
+

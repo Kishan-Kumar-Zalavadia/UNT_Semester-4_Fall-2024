@@ -1,0 +1,8 @@
+1024
+C
+RQ P2 204 B
+RL P2
+C
+RQ P7 6 W
+C
+STAT

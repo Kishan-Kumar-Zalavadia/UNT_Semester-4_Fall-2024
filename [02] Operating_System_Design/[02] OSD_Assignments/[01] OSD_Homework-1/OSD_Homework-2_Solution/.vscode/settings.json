@@ -1,0 +1,13 @@
+{
+  "C_Cpp.errorSquiggles": "disabled",
+  "files.associations": {
+    "ostream": "cpp",
+    "iostream": "cpp",
+    "__bit_reference": "cpp",
+    "array": "cpp",
+    "initializer_list": "cpp",
+    "ios": "cpp",
+    "string": "cpp",
+    "string_view": "cpp"
+  }
+}
