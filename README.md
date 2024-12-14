@@ -1,1 +1,1 @@
-# UNT - Fall 2024
+# UNT: Fall 2024
